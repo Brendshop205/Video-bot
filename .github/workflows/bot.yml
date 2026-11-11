@@ -1,6 +1,6 @@
 name: bot
-on:  
-push:
+on:
+  push:
   workflow_dispatch:
 jobs:
   run:
@@ -16,3 +16,4 @@ jobs:
       - run: python bot_telefon.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+
